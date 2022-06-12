@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@600;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Dhun</title>
+</head>
+
+<body>
+
+    <!-- ------------------------nav------------------------ -->
+    <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-earbuds" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6.825 4.138c.596 2.141-.36 3.593-2.389 4.117a4.432 4.432 0 0 1-2.018.054c-.048-.01.9 2.778 1.522 4.61l.41 1.205a.52.52 0 0 1-.346.659l-.593.19a.548.548 0 0 1-.69-.34L.184 6.99c-.696-2.137.662-4.309 2.564-4.8 2.029-.523 3.402 0 4.076 1.948zm-.868 2.221c.43-.112.561-.993.292-1.969-.269-.975-.836-1.675-1.266-1.563-.43.112-.561.994-.292 1.969.269.975.836 1.675 1.266 1.563zm3.218-2.221c-.596 2.141.36 3.593 2.389 4.117a4.434 4.434 0 0 0 2.018.054c.048-.01-.9 2.778-1.522 4.61l-.41 1.205a.52.52 0 0 0 .346.659l.593.19c.289.092.6-.06.69-.34l2.536-7.643c.696-2.137-.662-4.309-2.564-4.8-2.029-.523-3.402 0-4.076 1.948zm.868 2.221c-.43-.112-.561-.993-.292-1.969.269-.975.836-1.675 1.266-1.563.43.112.561.994.292 1.969-.269.975-.836 1.675-1.266 1.563z"/>
+          </svg>
+        <h4>DHUN</h4>
+    </nav>
+
+    <h1 id="tagline"> EK <span>DHUN</span> JO SABKO SUNAI DE</h1>
+
+    <!-- ---------------ALBUM------------------- -->
+    <div class="album" id="playlist">
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="0" />
+            <div class="aboutsong">
+                <h4 class="songname">LET ME DOWN SLOWLY</h4>
+                <p class="singer">Alec Benjamin</p>
+            </div>
+            <img src="heart.png" alt="" class="button2" />
+        </div>
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="1" />
+            <div class="aboutsong">
+                <h4 class="songname">YUN HI</h4>
+                <p class="singer">Mohit Chauhan</p>
+            </div>
+            <img src="heart.png" alt="" class="button2" />
+        </div>
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="2" />
+            <div class="aboutsong">
+                <h4 class="songname">IDK YOU YET</h4>
+                <p class="singer">Alexander 23</p>
+            </div>
+            <img src="heart.png" alt="" class="button2" />
+        </div>
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="3" />
+            <div class="aboutsong">
+                <h4 class="songname">CHOOMANTAR</h4>
+                <p class="singer">Sohail Sen, Benny Dyal</p>
+            </div>
+            <img src="heart.png" alt="" class="button2 " />
+        </div>
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="4" />
+            <div class="aboutsong">
+                <h4 class="songname">YELLOW</h4>
+                <p class="singer">Coldplay</p>
+            </div>
+            <img src="heart.png" alt="" class="button2" />
+        </div>
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="5" />
+            <div class="aboutsong">
+                <h4 class="songname">KINNA CHIR</h4>
+                <p class="singer">The PropheC</p>
+            </div>
+            <img src="heart.png" alt="" class="button2" />
+        </div>
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="6" />
+            <div class="aboutsong">
+                <h4 class="songname">HAPPIER</h4>
+                <p class="singer">Olivia Rodrigo</p>
+            </div>
+            <img src="heart.png" alt="" class="button2" />
+        </div>
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="7" />
+            <div class="aboutsong">
+                <h4 class="songname">MAST MAGAN</h4>
+                <p class="singer">Arijit Singh, Chinmayi</p>
+            </div>
+            <img src="heart.png" alt="" class="button2" />
+        </div>
+        <div class="songs">
+            <img src="playbtn.png" alt="" class="button btn" id="8" />
+            <div class="aboutsong">
+                <h4 class="songname">TUM SE HI</h4>
+                <p class="singer">Pritam, Mohit Chauhan</p>
+            </div>
+            <img src="heart.png" alt="" class="button2" />
+        </div>
+    </div>
+    <!-- ----------------------play progress bar ---------------------------- -->
+    <div class="footer">
+        <h4 id="currentsong">TUM SE HI</h4>
+        <p id="currentsinger">Pritam, Mohit Chauhan</p>
+        <div class="progress_bar">
+            <input type="range" name="range" id="progressbar" value="0" min="0" max="100" />
+        </div>
+        <div class="playpause_btn">
+            <img src="btn1.png" alt="" id="btn1" />
+            <img src="btn2.1.png" alt="" id="btn2" />
+            <img src="btn3.png" alt="" id="btn3" />
+        </div>
+    </div>
+
+
+    <!-- ----------------------------------script-------------------------------------- -->
+    <script>
+        // declaring variables
+        let songplay = Array.from(document.getElementsByClassName("button"));
+        let masterplay = document.getElementById("btn2");
+        let audioElement = new Audio("1.mp3");
+        let songs = Array.from(document.getElementsByClassName("songs"));
+        let myprogressbar = document.getElementById("progressbar");
+        let mastersong = document.getElementById("currentsong");
+        let mastersinger = document.getElementById("currentsinger");
+        let songindex = 0;
+        let fav = Array.from(document.getElementsByClassName("button2"));
+        let songname = [{
+            Name: "LET ME DOWN SLOWLY",
+            Singer: "Alec Benjamin"
+        }, {
+            Name: "YUN HI",
+            Singer: "Mohit Chauhan"
+        }, {
+            Name: "IDK YOU YET",
+            Singer: "Alexander 23"
+        }, {
+            Name: "CHOOMANTAR",
+            Singer: "Sohail Sen, Benny Dyal"
+        }, {
+            Name: "YELLOW",
+            Singer: "Coldplay"
+        }, {
+            Name: "KINNA CHIR",
+            Singer: "The PropheC"
+        }, {
+            Name: "HAPPIER",
+            Singer: "Olivia Rodrigo"
+        }, {
+            Name: "MAST MAGAN",
+            Singer: "Arijit singh, Chinmayi"
+        }, {
+            Name: "TUM SE HI",
+            Singer: "Pritam,Mohit Chauhan"
+        }, ]
+
+
+
+
+        //accessing songs from the list
+        const makeAllPlays = () => {
+            songplay.forEach((element) => {
+                element.src = "playbtn.png";
+            })
+        }
+        const backgroundNone = () => {
+            songs.forEach((element) => {
+                element.style.background = "none";
+            })
+        }
+        songplay.forEach((element) => {
+            element.addEventListener('click', (e) => {
+                if (e.target.class == undefined) {
+                    songindex = parseInt(e.target.id);
+                    backgroundNone();
+                    songs[songindex].style.background = "#7f22518e";
+                    mastersong.innerText = songname[songindex].Name;
+                    mastersinger.innerText = songname[songindex].Singer;
+                    audioElement.src = `${songindex+1}.mp3`;
+                    audioElement.currentTime = 0;
+                    makeAllPlays();
+                    audioElement.play();
+
+                    e.target.src = "pause.png";
+                    masterplay.src = "btn2.2.png";
+                    e.target.class = 1;
+                } else {
+                    audioElement.pause();
+                    masterplay.src = 'btn2.1.png';
+                    e.target.src = "playbtn.png";
+                    e.target.class = undefined;
+                }
+
+
+            })
+        });
+
+        // progress bar
+        audioElement.addEventListener('timeupdate', () => {
+            progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
+            myprogressbar.value = progress;
+        })
+        myprogressbar.addEventListener('change', () => {
+            audioElement.currentTime = (myprogressbar.value * audioElement.duration) / 100;
+        })
+
+        fav.forEach((element) => {
+            element.addEventListener('click', (e) => {
+
+                if (e.target.class == undefined) {
+                    e.target.src = "likebtn.png";
+                    e.target.class = 1;
+                    console.log(e.target.class);
+                } else {
+                    e.target.src = "heart.png";
+                    e.target.class = undefined;
+                }
+            })
+        });
+
+        //next song
+        document.getElementById('btn3').addEventListener('click', () => {
+            if (songindex >= 9) {
+                songindex = 0
+            } else {
+                songindex += 1;
+            }
+            backgroundNone();
+            songs[songindex].style.background = "#7f22518e";
+            audioElement.src = `${songindex+1}.mp3`;
+            currentsong.innerText = songname[songindex].Name;
+            currentsinger.innerText = songname[songindex].Singer;
+            audioElement.currentTime = 0;
+            audioElement.play();
+            masterplay.src = "btn2.2.png";
+            makeAllPlays();
+            songplay[songindex].src = 'pause.png';
+
+        })
+
+        //previous song
+        document.getElementById('btn1').addEventListener('click', () => {
+            if (songindex <= 0) {
+                songindex = 0
+            } else {
+                songindex -= 1;
+            }
+            backgroundNone();
+            songs[songindex].style.background = "#7f22518e";
+            audioElement.src = `${songindex+1}.mp3`;
+            currentsong.innerText = songname[songindex].Name;
+            currentsinger.innerText = songname[songindex].Name;
+            audioElement.currentTime = 0;
+            audioElement.play();
+            masterplay.src = "btn2.2.png";
+            makeAllPlays();
+            songplay[songindex].src = 'pause.png';
+        })
+
+        // playing master playbutton
+        masterplay.addEventListener('click', function() {
+            if (audioElement.paused || audioElement.currentTime <= 0) {
+                songplay[songindex].src = 'pause.png';
+                audioElement.play();
+                masterplay.src = "btn2.2.png";
+
+            } else {
+                songplay[songindex].src = 'playbtn.png';
+                audioElement.pause();
+                masterplay.src = "btn2.1.png";
+
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black url(bg.jpg) no-repeat left;
+    scroll-behavior: smooth;
+}
+
+
+/* -----------nav----------------------- */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 3.6rem;
+    background-color: #3c303694;
+    align-items: center;
+    color: #ff2b95;
+}
+
+nav h4 {
+    margin-left: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    color: #ffb82b;
+}
+
+#tagline {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #ffb82b;
+    font-weight: 600;
+    margin: 2rem;
+    text-align: center;
+}
+
+#tagline span {
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff2b95;
+}
+
+
+/* -------------------album---------------------------- */
+
+.album {
+    margin: 2rem auto 9rem auto;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.album>div {
+    margin: 0.4rem auto;
+    padding: 0.5rem;
+    border: 2px solid #ff2b95;
+    border-radius: 14px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutsong {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.songname {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #ff2b95;
+    font-weight: 600;
+}
+
+.singer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.album>div:hover {
+    background-color: #7f22518e;
+}
+
+.btn {
+    width: 2rem;
+    margin: 0.2rem 1rem;
+}
+
+.button2 {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+
+/* -----------------play progress bar--------------------- */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #c8307c;
+    width: 100%;
+    margin: 0;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 48px 48px 0px 0px;
+    box-shadow: rgba(254, 3, 158, 0.438) 0px 0px 57px 16px;
+}
+
+#file {
+    margin: 0;
+    padding: 0;
+}
+
+#currentsong {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#currentsinger {
+    color: rgb(34, 32, 32);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.6rem;
+}
+
+#progressbar {
+    width: 80vw;
+    cursor: pointer;
+}
